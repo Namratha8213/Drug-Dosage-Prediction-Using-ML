@@ -1,0 +1,163 @@
+/* style.css *//*
+
+*{
+    background-image: url('/static/images/3.avif');
+  */
+/*  background-size: cover;  Ensures the background image covers the entire body
+    background-position: center; *//*
+
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color:white;
+}
+div{
+background-color:none;
+}
+h1 {
+    color: #3498db;
+    text-align:center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:#3498db;
+    font-weight:bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color:green;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    align:center;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result {
+    font-size: 18px;
+    color: #2ecc71;
+    margin-top: 20px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.dropdown{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color:green;
+    font-weight:bold;
+}
+p{
+text-align:center;
+font-size:large;
+color:white;
+font-weight:bold;
+}*/
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/images/3.avif');
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0; /* Fallback color if the image is not loaded */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the container */
+    padding: 40px;
+    margin: 40px;
+    border-radius: 10px;
+    height:50%;
+    width:40%;
+    margin-left:400px;
+}
+
+h1 {
+    color: #3498db;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3498db;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+#link{
+  align:center;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Dosage Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ML Dosage Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="age">Age:</label>
+            <input type="number" name="age" required><br>
+
+            <label for="sugar">Sugar Level (normal/high):</label>
+            <select name="sugar" class="dropdown" required>
+                <option value="abnormal">abnormal</option>
+                <option value="normal">normal</option>
+            </select><br>
+
+            <label for="bp">Blood Pressure (normal/abnormal):</label>
+            <select name="bp" class="dropdown" required>
+                <option value="abnormal">abnormal</option>
+                <option value="normal">normal</option>
+            </select><br>
+
+            <label for="drug">Drug:</label>
+            <select name="drug" class="dropdown" required>
+                <!-- ... options ... -->
+                <option value="Mirtazapine">Mirtazapine</option>
+        <option value="Mesalamine">Mesalamine</option>
+        <option value="Bactrim">Bactrim</option>
+        <option value="Contrave">Contrave</option>
+        <option value="LEVORA">LEVORA</option>
+        <option value="Miconazole">Miconazole</option>
+        <option value="Nuvigil">Nuvigil</option>
+        <option value="Ciprofloxacin">Ciprofloxacin</option>
+        <option value="Trazodone">Trazodone</option>
+        <option value="Aripiprazole">Aripiprazole</option>
+        <option value="Oxybutynin">Oxybutynin</option>
+        <option value="Clonazepam">Clonazepam</option>
+        <option value="Sodium oxybate">Sodium oxybate</option>
+        <option value="Lamotrigine">Lamotrigine</option>
+        <option value="Blisovi Fe 1 / 20">Blisovi Fe 1 / 20</option>
+        <option value="Ivermectin">Ivermectin</option>
+        <option value="Suprep Bowel Prep Kit">Suprep Bowel Prep Kit</option>
+        <option value="Movantik">Movantik</option>
+        <option value="Actos">Actos</option>
+        <option value="Duloxetine">Duloxetine</option>
+        <option value="NuvaRing">NuvaRing</option>
+        <option value="Escitalopram">Escitalopram</option>
+        <option value="Campral">Campral</option>
+        <option value="Gabapentin">Gabapentin</option>
+        <option value="Levonorgestrel">Levonorgestrel</option>
+        <option value="Aubra">Aubra</option>
+        <option value="Ethinyl estradiol / etonogestrel">Ethinyl estradiol / etonogestrel</option>
+        <option value="Microgestin Fe 1.5 / 30">Microgestin Fe 1.5 / 30</option>
+        <option value="Wellbutrin">Wellbutrin</option>
+        <option value="Etonogestrel">Etonogestrel</option>
+        <option value="Nitrofurantoin">Nitrofurantoin</option>
+        <option value="Beyaz">Beyaz</option>
+        <option value="Lo Loestrin Fe">Lo Loestrin Fe</option>
+        <option value="Ethinyl estradiol / norgestimate">Ethinyl estradiol / norgestimate</option>
+        <option value="Guaifenesin / pseudoephedrine">Guaifenesin / pseudoephedrine</option>
+        <option value="Glyburide">Glyburide</option>
+        <option value="Phentermine / topiramate">Phentermine / topiramate</option>
+            </select><br>
+
+            <label for="Sideeffects">Side-effects:</label>
+            <select name="Sideeffects" class="dropdown" required>
+                <!-- ... options ... -->
+                 <option value="dizziness">dizziness</option>
+        <option value="headache">headache</option>
+        <option value="vomting">vomting</option>
+        <option value="vomting and headache">vomting and headache</option>
+        <option value="headache and dizziness">headache and dizziness</option>
+        <option value="weight gain">weight gain</option>
+        <option value="heatburn">heatburn</option>
+            </select><br>
+
+            <button type="submit">Predict Dosage</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Dosage Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+
+</head>
+<body>
+<h1>ML Dosage Prediction</h1>
+<div>
+<form action="/predict" method="post">
+    <label for="age">Age:</label>
+    <input type="number" name="age" required><br>
+
+    <label for="sugar">Sugar Level (normal/high):</label>
+    <select name="sugar" class="dropdown" required>
+        <option value="abnormal">abnormal</option>
+        <option value="normal">normal</option>
+    </select><br>
+    &lt;!&ndash; <input type="text" name="sugar" required><br>&ndash;&gt;
+
+    <label for="bp">Blood Pressure (normal/abnormal):</label>
+    <select name="bp" class="dropdown" required>
+        <option value="abnormal">abnormal</option>
+        <option value="normal">normal</option>
+    </select><br>
+    &lt;!&ndash;        <input type="text" name="bp" required><br>&ndash;&gt;
+
+
+    <label for="drug">Drug:</label>
+    <select name="drug" class="dropdown" required>
+
+    </select><br>
+    &lt;!&ndash;<label for="drug">Drug:</label>
+    <input type="text" name="drug" required><br>&ndash;&gt;
+
+
+    &lt;!&ndash; Add these lines inside the form &ndash;&gt;
+    <label for="Sideeffects">Side-effects:</label>
+    <select name="Sideeffects" class="dropdown" required>
+
+    </select><br>
+
+
+    &lt;!&ndash; <label for="Sideeffects">Side-effects:</label>
+     <input type="text" name="Sideeffects" required><br>&ndash;&gt;
+
+    <button type="submit">Predict Dosage</button>
+</form>
+    </div>
+</body>
+</html>
+-->
